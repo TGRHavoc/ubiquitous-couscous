@@ -7,15 +7,25 @@ This is an AppVeyor Server (on-premise AppVeyor solution) pipeline for automatic
 
 What this does is, it generates a single PDF file for each folder found. 
 Each folder should then, in turn, contain the markdown files you want to put into the PDF.
-Go to the [RMarkdown Website](https://rmarkdown.rstudio.com/lesson-1.html) for more information like how to format your markdown files.
+Since this uses globbing, if you want a certain markdown file to appear before another, you should make sure it appears alphabetically before.
+For example, `1.Somethimg.md` will appear in the PDF before `2.Something else.md`.
+
+In this workflow `_index.md` will **always** (it must exist) and should contain the main meta data for pandoc.
+
 
 ## Installation
 
 It is highly recommended to install AppVeyor Server on a Linux server.
 I haven't tested this workflow on a Windows installation nor, do I intend to (for one, I don't have a Windows server).
 
-Then, install rmarkdown (`install.packages("rmarkdown")`) in R.
-That should be enough to get started!
+
+Anyways, once you have the AppVeyor Server installed you just have to install LaTex and Pandoc.
+
+```sh
+sudo apt install pandoc texlive-full
+```
+
+If you know what you're doing, you can install the specific parts of LaTex to save some space.
 
 ## Contributing
 
