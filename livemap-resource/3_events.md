@@ -84,7 +84,7 @@ The structure of the blip is as follows:
 Below you can find information on some server-only events. This can only be called on the server.
 
 | Name                              |                   Parameters                   | Description                                                                                        |
-| :-------------------------------- | ---------------------------------------------: | -------------------------------------------------------------------------------------------------: |
+| --------------------------------- | :--------------------------------------------: | -------------------------------------------------------------------------------------------------- |
 | livemap:internal_AddPlayerData    | identifier (string), key (string), value (any) | Adds data with the key that gets sent over Websockets for the player with the specified identifier |
 | livemap:internal_UpdatePlayerData | identifier (string), key (string), value (any) | Updated the data that is associated with the player with the identifier                            |
 | livemap:internal_RemovePlayerData |       identifier (string), key (string)        | Removed the data that is associated with the player with the identifier                            |
