@@ -1,10 +1,7 @@
 ---
 title: "LiveMap Resource"
 author: "Jordan Dalton"
-date: "Rendered on %%current_date%%"
-output:
-    pdf_document:
-        toc: yes 
+toc: true
 ---
 
 This is the resource that sits on the FiveM server.
