@@ -1,7 +1,8 @@
 ---
 title: "Frequently asked questions"
 weight: 4
----
+...
+
 # Frequently asked questions
 
 Below you can find some frequently asked questions about the interface.
