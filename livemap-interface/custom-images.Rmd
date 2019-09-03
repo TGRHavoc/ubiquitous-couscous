@@ -3,6 +3,8 @@ title: "Custom Images"
 weight: 4
 ---
 
+# Custom Images
+
 It's now fairly easy to use your own, custom images in the interface.
 
 - Make a new folder in your `tileDirectory` directory (optional but, recommended)

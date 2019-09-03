@@ -2,6 +2,7 @@
 title: "Installing"
 weight: 1
 ---
+# Installation
 
 Download the ZIP file. And extract the contents into `resources/live_map/`.
 

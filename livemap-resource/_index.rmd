@@ -11,17 +11,17 @@ This is the resource that sits on the FiveM server.
 
 It's purpose is to send data to the interface via websockets to keep player location updated.
 
-```{r child = 'installation.md'}
+```{r child = 'installation.Rmd'}
 ```
 
-```{r child = 'configuration.md'}
+```{r child = 'configuration.Rmd'}
 ```
 
-```{r child = 'events.md'}
+```{r child = 'events.Rmd'}
 ```
 
-```{r child = 'faq.md'}
+```{r child = 'faq.Rmd'}
 ```
 
-```{r child = 'changelog.md'}
+```{r child = 'changelog.Rmd'}
 ```

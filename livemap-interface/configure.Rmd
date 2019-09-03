@@ -3,6 +3,8 @@ title: Configuration
 weight: 2
 ---
 
+# Configuration
+
 ## config.json
 The only file you will need to change to configure the map is the `config.json` file.
 This file can have comments in it without breaking the interface.

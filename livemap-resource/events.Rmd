@@ -3,6 +3,8 @@ title: "Events"
 weight: 3
 ---
 
+# Events
+
 In an effort to make the addon useful to other developers, I've created a few events that can be used to make changes to the data being sent to the UI.
 
 ## Client to server

@@ -3,6 +3,8 @@ title: "Configuration"
 weight: 2
 ---
 
+# Configuration
+
 There isn't much to configure with the resource.
 It's built to be as plug-n-play friendly as possible.
 
