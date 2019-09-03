@@ -1,7 +1,10 @@
 ---
 title: "LiveMap Interface"
-github: https://github.com/TGRHavoc/live_map-interface
-weight: 1
+author: "Jordan Dalton"
+date: "Rendered on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+    pdf_document:
+        toc: yes
 ---
 
 This is the Web Interface for the FiveM addon [live_map](https://github.com/TGRHavoc/live_map).
@@ -16,3 +19,19 @@ Some servers running the map:
 - https://californiadojrp.com/livemap/
 - https://map.sosarp.net/
 - http://www.gtav.es/livemap/ 
+
+
+```{r child = 'installation.md'}
+```
+
+```{r child = 'configuration.md'}
+```
+
+```{r child = 'custom-images.md'}
+```
+
+```{r child = 'faq.md'}
+```
+
+```{r child = 'changelog.md'}
+```

@@ -1,0 +1,27 @@
+---
+title: "LiveMap Resource"
+author: "Jordan Dalton"
+date: "Rendered on `r format(Sys.time(), '%d %B, %Y')`"
+output:
+    pdf_document:
+        toc: yes 
+---
+
+This is the resource that sits on the FiveM server.
+
+It's purpose is to send data to the interface via websockets to keep player location updated.
+
+```{r child = 'installation.md'}
+```
+
+```{r child = 'configuration.md'}
+```
+
+```{r child = 'events.md'}
+```
+
+```{r child = 'faq.md'}
+```
+
+```{r child = 'changelog.md'}
+```
