@@ -8,7 +8,7 @@ This is an AppVeyor Server (on-premise AppVeyor solution) pipeline for automatic
 What this does is, it generates a single PDF file for each folder found. 
 Each folder should then, in turn, contain the markdown files you want to put into the PDF.
 Since this uses globbing, if you want a certain markdown file to appear before another, you should make sure it appears alphabetically before.
-For example, `1.Somethimg.md` will appear in the PDF before `2.Something else.pdf`.
+For example, `1.Somethimg.md` will appear in the PDF before `2.Something else.md`.
 
 ## Installation
 
@@ -26,7 +26,7 @@ If you know what you're doing, you can install the specific parts of LaTex to sa
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
+1. Fork it (<https://github.com/TGRHavoc/ubiquitous-couscous/fork>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'feat: add some fooBar'`)
    1. Make sure to conform to [Conventional Commits Standard.][commit-convention]
