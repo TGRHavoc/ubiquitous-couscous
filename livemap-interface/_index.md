@@ -2,7 +2,7 @@
 title: "LiveMap Interface"
 author: "Jordan Dalton"
 toc: true
-...
+---
 
 This is the Web Interface for the FiveM addon [live_map](https://github.com/TGRHavoc/live_map).
 

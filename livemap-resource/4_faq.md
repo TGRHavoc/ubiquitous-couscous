@@ -1,13 +1,13 @@
 ---
 title: "Frequently asked questions"
 weight: 4
-...
+---
 
 # Frequently asked questions
 
 Below you can find some frequently asked questions about the interface.
 
----
+___
 
 ## How do I get blips?
 
@@ -23,7 +23,7 @@ add_ace group.YOUR_GROUP command.blips allow ## Allow a specific group to use th
 add_ace identifier.YOUR_IDENTIFIER command.blips allow ## Allow a specific player to use the blips command
 ```
 
----
+___
 
 ## I get a "dependency" error
 
@@ -36,7 +36,7 @@ The best thing to do is to install the dependencies yourself and try again.
 4. Remove `dependency "yarn"` from the resource file
 5. Try starting again
 
----
+___
 
 ## I get a YARN error
 
