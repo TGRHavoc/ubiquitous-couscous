@@ -4,7 +4,7 @@ environment:
     secure: IUPo2N0bCejRvo0DxloThbwU/Q5tMeeXay7m/6quQXUH6XTbWYVvjQx/UXGMPoclB2N6nCnFM7QTqpwI8XMWoEKJdcM7Wn058ISffodpAGq2fcO4flZY7hJrcNCQnKDsRgstScQ4ENIBhY01YDH9BU8wv8SSzaPghtJEKmRl/Kc=
 build_script:
 - sh: >-
-    cd "$APPVEYOR_BUILD_FOLDER" 
+    cd "$APPVEYOR_BUILD_FOLDER"
 
     ORIG=$(echo "$PWD")
 
@@ -20,12 +20,11 @@ build_script:
          pandoc _index.md $files -s -f markdown_github+yaml_metadata_block+tex_math_single_backslash+grid_tables --pdf-engine pdflatex --highlight-style tango --variable graphics=yes --variable 'geometry:margin=0.7in' -M date:"$(date +'%d %B, %Y%n')" -o "../build/$DIRNAME.pdf"
     done
 
-
-
     cd "$ORIG"
+deploy_script:
+- sh: semantic-release
 on_success:
 - pwsh: .\discord.ps1 success $env:WEBHOOK_URL
 on_failure:
 - pwsh: .\discord.ps1 failure $env:WEBHOOK_URL
 ...
-
