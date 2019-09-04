@@ -8,6 +8,7 @@ build_script:
 - sh: >-
     cd "$APPVEYOR_BUILD_FOLDER"
 
+
     ORIG=$(echo "$PWD")
 
     for d in */ ; do
@@ -23,19 +24,21 @@ build_script:
     done
 
     cd "$ORIG"
-deploy_script: 
+deploy_script:
 - pwsh: >-
     git config --global credential.helper store
 
-    Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-    
+    Add-Content "$HOME\.git-credentials" "https://$($env:GH_TOKEN):x-oauth-basic@github.com`n"
+
     git config --global user.email "ci@tgrhavoc.me"
+
     git config --global user.name "CI on Olympus"
 
     git add build
-    git commit -am "chore: build $($env:APPVEYOR_BUILD_VERSION)"
-    git push
 
+    git commit -am "chore: build $($env:APPVEYOR_BUILD_VERSION) [skip ci]"
+
+    git push origin HEAD:$($env:APPVEYOR_REPO_BRANCH)
 on_success:
 - pwsh: .\discord.ps1 success $env:WEBHOOK_URL
 on_failure:
