@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/TGRHavoc/ubiquitous-couscous/compare/v1.0.0...v1.1.0) (2019-09-04)
+
+
+### Features
+
+* change committer name and email when deploying ([3b31857](https://github.com/TGRHavoc/ubiquitous-couscous/commit/3b31857))
+
 # 1.0.0 (2019-09-04)
 
 
