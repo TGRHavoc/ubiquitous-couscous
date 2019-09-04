@@ -31,6 +31,11 @@ deploy_script:
     
     git config --global user.email "ci@tgrhavoc.me"
     git config --global user.name "CI on Olympus"
+
+    git add build
+    git commit -am "chore: build $($env:APPVEYOR_BUILD_VERSION)"
+    git push
+
 on_success:
 - pwsh: .\discord.ps1 success $env:WEBHOOK_URL
 on_failure:
