@@ -4,10 +4,14 @@ environment:
     secure: IUPo2N0bCejRvo0DxloThbwU/Q5tMeeXay7m/6quQXUH6XTbWYVvjQx/UXGMPoclB2N6nCnFM7QTqpwI8XMWoEKJdcM7Wn058ISffodpAGq2fcO4flZY7hJrcNCQnKDsRgstScQ4ENIBhY01YDH9BU8wv8SSzaPghtJEKmRl/Kc=
   GH_TOKEN:
     secure: SfoqaWIvSYtUGYzLVyQWn6zD00m/usWTy6rq5v3iDgqa11k1Np9hD2FMJ8molt6z
+  GIT_AUTHOR_NAME: CI on Olympus
+  GIT_AUTHOR_EMAIL: jordan.8474@gmail.com
+  GIT_COMMITTER_NAME: CI on Olympus
+  GIT_COMMITTER_EMAIL: jordan.8474@gmail.com
 build_script:
 - sh: >-
     cd "$APPVEYOR_BUILD_FOLDER"
-    
+
     ORIG=$(echo "$PWD")
 
     for d in */ ; do
